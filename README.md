@@ -3,11 +3,11 @@
 Index:
 
 Pset01 (week 1):
-  1.- Marioless
-  2.- Mariomore
-  3.- Cash
-  4.- Credit
+1.- Marioless
+2.- Mariomore
+3.- Cash
+4.- Credit
   
 Pset02 (week 2):
-  1.- Caesar
-  2.- Vigenere
+1.- Caesar
+2.- Vigenere
