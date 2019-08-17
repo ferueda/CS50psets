@@ -15,11 +15,11 @@ int main(void)
     {
         cardnumber = get_long("Enter your credit card number\n");
     } while (cardnumber < 0);
-   
-    int cardLong = countCardNumber(cardnumber);    
+
+    int cardLong = countCardNumber(cardnumber);
     bool validNumbers  = luhnAlgo(cardnumber);
     int cardBrand = checkCardBrand(cardnumber);
-    
+
     //validates if both, number of digits and Luhn's algorithm, are correct and prints the brand of the credit card
     if ((cardLong == 13 || cardLong == 15 || cardLong == 16) && (validNumbers == true))
     {
@@ -28,12 +28,12 @@ int main(void)
             printf("AMEX\n");
         } else if (cardBrand == 2)
         {
-            printf("Master Card\n");
+            printf("MASTERCARD\n");
         } else if (cardBrand == 3)
         {
             printf("VISA\n");
-        } else (printf("Invalid number\n"));
-    } else return printf("Invalid number\n");
+        } else (printf("INVALID\n"));
+    } else printf("INVALID\n");
 }
 
 //function that counts the numbers of the credit card
@@ -54,7 +54,7 @@ bool luhnAlgo(long number)
     //executes function that counts the number of digits of the credit card
     int cardLong = countCardNumber(number);
     int digits[cardLong];
-    
+
     //creates an array with the credit card numbers (backwards)
     for (int i = 0; i < cardLong; i++)
     {
@@ -66,16 +66,16 @@ bool luhnAlgo(long number)
     {
         digits[i] = digits[i] * 2;
     }
-    
+
     int sum = 0;
     int temp;
-    
+
     for (int i = 0; i < cardLong; i++)
     {
         temp = (digits[i] % 10) + (digits[i]/10 % 10);
         sum = sum + temp;
     }
-            
+
     if (sum % 10 == 0)
     {
         return true;
@@ -88,13 +88,13 @@ int checkCardBrand(long number)
     int brand = 0;
     int cardLong = countCardNumber(number);
     int digits[cardLong];
-    
+
     for (int i = 0; i < cardLong; i++)
     {
         digits[i] = number % 10;
         number = number / 10;
     }
-    
+
     //assign 1 for AMEX, 2 for MS, 3 for VISA and 0 for INVALID to vaiable brand and then return it
     if ((digits[cardLong-1] == 3) && (digits[cardLong-2] == 4 || digits[cardLong-2] == 7))
     {
@@ -106,6 +106,6 @@ int checkCardBrand(long number)
     {
         brand = 3;
     } else brand = 0;
-    
+
     return brand;
-} 
+}
