@@ -20,15 +20,18 @@ int main(int argc, string argv[])
             if ((c < 'a' || c > 'z') && (c < 'A' || c > 'Z'))
             {
                 printf("Usage: ./vigenere keyword\n");
-                return 1;               
+                return 1;
             }
         }
         string plaintext = get_string("plaintext: ");
-        changeText(plaintext, argv[1]);
-    } else 
+        int textlen = strlen(plaintext);
+        char *cipher = malloc(textlen) + 1;
+        cipher = changeText(plaintext, argv[1]);
+        printf("ciphertext: %s\n", cipher);
+    } else
     {
         printf("Usage: ./vigenere keyword\n");
-        return 1;    
+        return 1;
     }
 }
 
@@ -48,11 +51,11 @@ int shift(char c)
 }
 
 //function that transform the text into ciphertext
-string changeText(string text, string key)
+char *changeText(string text, string key)
 {
     int textlen = strlen(text);
     int klen = strlen(key);
-    char convertext[textlen];
+    char *convertext = malloc(textlen) + 1;
     for (int i = 0, j = 0; i < textlen; i++)
     {
         int k = shift(key[j]);
@@ -65,13 +68,11 @@ string changeText(string text, string key)
             convertext[i] = (text[i] - 97 + k) % 26 + 97;
             j++;
         } else convertext[i] = text[i];
-        
+
         if (j == klen)
         {
             j = 0;
         }
-    } 
-    string newtext = convertext;
-    printf("ciphertext: %s\n", newtext);
-    return 0;
+    }
+    return convertext;
 }
