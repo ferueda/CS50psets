@@ -1,3 +1,7 @@
+// Felipe Rueda
+// CS50 2019
+// pset 2
+
 #include <cs50.h>
 #include <stdio.h>
 #include <stdlib.h>
