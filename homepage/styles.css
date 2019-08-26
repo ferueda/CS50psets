@@ -1,0 +1,154 @@
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    background: #fff;
+    width: 90%;
+    margin: auto;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear:both;
+}
+
+.logo {
+    float: left;
+    padding: 10px 0;
+    font-family: Century Gothic;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.logo-active a {
+    color: black;
+    text-decoration: none;
+}
+
+.logo a:hover {
+    font-size: 25px;
+    transition: 0.3s ease;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 10px;
+    padding-top: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    margin-top: 15px;
+    transition: 0.3s ease;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    background-color: #3772A1;
+    color: #fff;
+}
+
+.active a {
+    background-color: #3772A1;
+    color: #fff;
+}
+
+.main-content {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    background: #fff;
+    align-items: center;
+}
+
+.img-container {
+    float: left;
+    width: 50%;
+    padding: 20px;
+    height: 300px;
+    background: #fff;
+    align-items: center;
+}
+
+.text-container {
+    width: 50%;
+    float: right;
+    padding: 20px;
+    height: 300px;
+    background: #fff;
+    align-items: center;
+}
+
+.text-container p {
+
+}
+
+#profile-pic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    padding: 10px;
+     border-radius: 00px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    margin-top: 25px;
+}
+
+footer {
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    background: #eae9e9;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+footer::after {
+    content: '';
+    display: table;
+    clear:both;
+}
+
+.rss-content {
+    width: 80%;
+}
+
+.rrss-content li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 30px;
+    padding-top: 20px;
+}
+
+#twitter {
+    width: 40px;
+}
+
+#github {
+    width: 40px;
+}
+
+#linkedin {
+    width: 40px;
+}
