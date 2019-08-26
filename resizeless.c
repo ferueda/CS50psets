@@ -1,7 +1,7 @@
-// Resizes an image n times, pixel by pixel.
 // Felipe Rueda
 // CS50 2019
 // pset 03
+// Resizes an image n times, pixel by pixel.
 
 #include <stdio.h>
 #include <stdlib.h>
