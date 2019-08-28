@@ -1,0 +1,116 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+.main-container {
+    width: 1200px;
+    margin: 0 auto 0 auto;
+}
+
+header {
+    width: 100%;
+    margin: 10px 0 20px 0;
+    box-sizing: border-box;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear:both;
+}
+
+.logo {
+    font-family: Century Gothic;
+    font-size: 26px;
+    font-weight: bold;
+    float: left;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.logo-active a {
+    color: black;
+    text-decoration: none;
+}
+
+nav {
+    margin-left: auto;
+    float: right;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    transition: 0.3s ease;
+    padding: 10px 20px 10px 20px;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    background-color: #3772A1;
+    color: #fff;
+}
+
+.active a {
+    background-color: #3772A1;
+    color: #fff;
+}
+
+.main-content {
+    width: 1000px;
+    margin: 0px auto 0px auto;
+}
+
+.img-container {
+    margin-left: auto;
+    float: left;
+    width: 50%;
+}
+
+.text-container {
+    margin-right: auto;
+    float: left;
+    width: 50%;
+}
+
+p {
+    text-align: justify;
+}
+
+.rrss-content li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+footer {
+    width: 1200px;
+    margin: 0px auto 0px auto;
+    float: left;
+}
+
+footer p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+#profile-pic {
+    width: 250px;
+    border-radius: 50%;
+}
+
+#twitter, #github, #linkedin {
+    width: 40px;
+}
