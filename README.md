@@ -18,4 +18,9 @@
 3. Recover
 
 ### Pset05 (week 5):
-1. homepage
+1. Homepage
+
+### Pset06 (week 6):
+1. Hello
+2. Mariomore
+3. Credit
