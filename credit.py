@@ -2,10 +2,6 @@
 # CS50 2019
 # Pset 06
 
-#AMEX 15 digit | 34 and 37
-#MASTERCARD 16 digit | 51, 52, 53, 54 or 55
-#VISA 13 and 16 digit | 4
-
 from cs50 import get_int
 
 while True:
