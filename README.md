@@ -1,6 +1,6 @@
 # Personal solutions to Harvard CS50's problem sets.
 
-## Index:
+## Index
 
 ### Pset01 (week 1):
 1. Marioless
