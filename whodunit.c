@@ -1,7 +1,7 @@
 // Felipe Rueda
 // CS50 2019
 // Pset 03
-// Reads a BMP file, changes all the white pixels for black ones and the writes a new BMP file.
+// Reads a BMP file, changes all the white pixels for black ones and the writes a new BMP file
 
 #include <stdio.h>
 #include <stdlib.h>
