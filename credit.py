@@ -1,6 +1,6 @@
 # Felipe Rueda
 # CS50 2019
-# Pset 06
+# Pset 6
 
 from cs50 import get_int
 
